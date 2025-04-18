@@ -1,0 +1,9 @@
+# Ignore migrations folder
+*/migrations/*
+!*/migrations/__init__.py
+
+# Ignore environment folders
+env/
+.env/
+venv/
+.venv/

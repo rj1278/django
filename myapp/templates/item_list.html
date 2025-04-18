@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Django App</title>
+</head>
+<body>
+    <h1>Items</h1>
+    {% if items %}
+        <ul>
+        {% for item in items %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No items available.</p>
+    {% endif %}
+</body>
+</html>
